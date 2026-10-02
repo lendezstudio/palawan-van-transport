@@ -11,8 +11,15 @@ Static site (HTML/CSS/JS, no framework). The deployable site is in `site/`.
 - Rebuild: `powershell -ExecutionPolicy Bypass -File build.ps1`
 - Preview: `powershell -ExecutionPolicy Bypass -File tools\serve.ps1 -Port 8765`, then open http://localhost:8765/
 
+## Publishing
+Live site: https://lendezstudio.github.io/palawan-van-transport/
+
+`.github/workflows/publish.yml` deploys the `site/` folder to GitHub Pages on every push to `main` that changes `site/`.
+It can also be run manually from the Actions tab.
+Required setting: **Settings → Pages → Source = GitHub Actions**. Don't switch it to "Deploy from a branch": that would publish this README instead of the site.
+
 ## Before going live
-1. Set `siteUrl` in `src/data/site.json` to the real domain, then rebuild. It drives the canonical links, Open Graph URLs, sitemap and schema. It's currently a placeholder (`.example`).
+1. `siteUrl` in `src/data/site.json` is set to the GitHub Pages address. If the site moves to a custom domain, update it and rebuild. It drives the canonical links, Open Graph URLs, sitemap and schema.
 2. Form: with no backend, "Send Travel Request" validates the form, then hands the request to WhatsApp or email with the details pre-filled.
    To collect submissions directly, put a form-service URL (e.g. Formspree) in `formEndpoint` and rebuild.
 3. Confirm with the business: fares, schedules, pickup points, travel times, luggage policy, payment and cancellation rules, extra phone numbers, and permission to publish guest reviews and photos.
