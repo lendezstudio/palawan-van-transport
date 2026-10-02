@@ -78,7 +78,8 @@ function Render($html, $depth, $nav, $absolute) {
   $html = Replace-Rx $html '\{\{alt:([\w-]+)\}\}' { param($m) Enc $alts.($m.Groups[1].Value) }
   $html = Replace-Rx $html '\{\{cur:(\w+)\}\}' { param($m) if ($m.Groups[1].Value -eq $nav) { ' aria-current="page"' } else { '' } }
   $html = $html.Replace('{{year}}', "$year")
-  $root = if ($absolute) { '/' } elseif ($depth -eq 0) { './' } else { '../' * $depth }
+  # 404 is served at any URL depth, so it links from the absolute site URL (works under a GitHub Pages subfolder)
+  $root = if ($absolute) { $site.siteUrl } elseif ($depth -eq 0) { './' } else { '../' * $depth }
   $html = $html.Replace('{{root}}', $root)
   if ($html -match '\{\{[^}]*\}\}') { throw "Unresolved token: $($Matches[0])" }
   $html
