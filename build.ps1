@@ -28,6 +28,10 @@ $images = (Read-Text "$src\data\images.json") | ConvertFrom-Json
 $alts   = (Read-Text "$src\data\alt.json")    | ConvertFrom-Json
 $layout = Read-Text "$src\layout.html"
 $year = (Get-Date).Year
+# Content hashes appended to CSS/JS links (?v=...) so browsers fetch fresh files after each change
+function Short-Hash($p) { (Get-FileHash $p -Algorithm SHA1).Hash.Substring(0, 8).ToLower() }
+$cssVersion = Short-Hash "$out\assets\css\styles.css"
+$jsVersion = Short-Hash "$out\assets\js\main.js"
 
 function Image-Info($slug) {
   $i = $images.$slug; if (-not $i) { throw "Unknown image '$slug'" }
@@ -78,6 +82,7 @@ function Render($html, $depth, $nav, $absolute) {
   $html = Replace-Rx $html '\{\{alt:([\w-]+)\}\}' { param($m) Enc $alts.($m.Groups[1].Value) }
   $html = Replace-Rx $html '\{\{cur:(\w+)\}\}' { param($m) if ($m.Groups[1].Value -eq $nav) { ' aria-current="page"' } else { '' } }
   $html = $html.Replace('{{year}}', "$year")
+  $html = $html.Replace('{{cssVersion}}', $cssVersion).Replace('{{jsVersion}}', $jsVersion)
   # 404 is served at any URL depth, so it links from the absolute site URL (works under a GitHub Pages subfolder)
   $root = if ($absolute) { $site.siteUrl } elseif ($depth -eq 0) { './' } else { '../' * $depth }
   $html = $html.Replace('{{root}}', $root)
