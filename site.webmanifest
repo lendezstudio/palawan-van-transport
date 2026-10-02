@@ -1,0 +1,14 @@
+{
+  "name": "Palawan Van Transport & Travel Services",
+  "short_name": "Palawan Van",
+  "description": "Shared and private van transfers, airport pickups, tours, rentals, and travel services across Palawan.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#f7f2e7",
+  "theme_color": "#0c4623",
+  "icons": [
+    { "src": "favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lendezstudio.github.io/palawan-van-transport/sitemap.xml
