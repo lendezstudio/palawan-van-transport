@@ -458,12 +458,13 @@ a.stops__name:hover { color: var(--sun); text-decoration: underline; }
 }
 .site-footer__base p { margin: 0; }
 .site-footer__note { flex-basis: 100%; }
-.site-footer__credit { margin-left: auto !important; }
+/* Mobile: credit on its own line, left-aligned with the notes above. Tablet/desktop: right side of the copyright line */
+.site-footer__credit { flex-basis: 100%; }
+@media (min-width: 48rem) {
+  .site-footer__credit { flex-basis: auto; margin-left: auto !important; }
+}
 .site-footer__credit a { color: var(--ink-2); font-weight: 600; }
 .site-footer__credit a:hover { color: var(--green); }
-@media (max-width: 47.99rem) {
-  .site-footer__credit { flex-basis: 100%; margin: .5rem 0 0 !important; text-align: center; }
-}
 @media (min-width: 48rem) {
   .site-footer__grid { grid-template-columns: 1fr 1fr; }
 }
