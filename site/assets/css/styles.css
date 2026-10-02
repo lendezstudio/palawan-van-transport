@@ -209,30 +209,29 @@ body.nav-open { overflow: hidden; }
 }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; display: flex; flex-direction: column; background: var(--green-900); color: #fff; overflow: hidden; }
-.hero__media { order: 2; display: block; aspect-ratio: 4 / 3; position: relative; }
-.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 88%; }
-.hero__content { order: 1; padding-block: 2.25rem 2rem; }
-.hero h1 { color: #fff; font-size: clamp(2.1rem, 1.4rem + 3.4vw, 4.1rem); max-width: 13ch; }
-.hero__lead { font-size: clamp(1.05rem, 1rem + .35vw, 1.2rem); color: rgb(255 255 255 / .88); max-width: 34rem; margin-bottom: 1.6rem; }
-
-/* Tablet & up: headline panel beside the full photo, so text never covers the vans */
-@media (min-width: 48rem) {
-  .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); min-height: min(82vh, 44rem); }
-  .hero__content {
-    align-self: center; max-width: none; margin: 0;
-    padding: 3rem clamp(1.5rem, 3vw, 3.5rem) 3rem max(var(--gutter), calc((100vw - var(--container)) / 2 + var(--gutter)));
-  }
-  .hero__media { aspect-ratio: auto; }
-  .hero__media img { position: absolute; inset: 0; object-position: 50% 70%; }
-  /* road-line seam between panel and photo */
-  .hero__media::before {
-    content: ""; position: absolute; z-index: 1; left: 0; top: 0; bottom: 0; width: 12px;
-    background: var(--green-950) linear-gradient(180deg, var(--sun) 0 26px, transparent 26px 46px) 50% 0 / 3px 46px repeat-y;
-  }
+/* Full-bleed van photo behind the text; a green scrim keeps the copy readable while the vans stay visible */
+.hero { position: relative; isolation: isolate; display: grid; background: var(--green-950); color: #fff; overflow: hidden; }
+.hero__media { position: absolute; inset: 0; z-index: -2; display: block; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, rgb(6 38 20 / .9) 0%, rgb(6 38 20 / .78) 48%, rgb(6 38 20 / .2) 74%, rgb(6 38 20 / 0) 88%);
 }
-@media (min-width: 75rem) {
-  .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); }
+.hero__content { padding-block: 2.25rem 15rem; }
+.hero h1 { color: #fff; font-size: clamp(2.1rem, 1.4rem + 3.4vw, 4.1rem); max-width: 13ch; }
+.hero__lead { font-size: clamp(1.05rem, 1rem + .35vw, 1.2rem); color: rgb(255 255 255 / .9); max-width: 34rem; margin-bottom: 1.6rem; }
+.hero h1, .hero__lead { text-shadow: 0 2px 16px rgb(0 0 0 / .3); }
+
+/* Tablet & up: text on the left over a sideways scrim, vans clear on the right */
+@media (min-width: 48rem) {
+  .hero { min-height: min(88vh, 46rem); align-items: center; }
+  .hero__media img { object-position: 50% 82%; }
+  .hero::before {
+    background: linear-gradient(90deg, rgb(6 38 20 / .92) 0, rgb(6 38 20 / .82) calc(50% - 8rem), rgb(6 38 20 / .3) calc(50% + 12rem), rgb(6 38 20 / 0) calc(50% + 22rem));
+  }
+  .hero__content { padding-block: 3.5rem; }
+  .hero h1 { max-width: 14ch; }
+  .hero__lead { max-width: 32rem; }
 }
 
 /* ---------- Stops strip ---------- */
