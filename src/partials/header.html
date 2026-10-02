@@ -1,0 +1,27 @@
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="{{root}}" aria-label="Palawan Van Transport &amp; Travel Services, home">
+        <img class="brand__emblem" src="{{root}}assets/img/emblem-160.png" width="160" height="127" alt="">
+        <img class="brand__wordmark" src="{{root}}assets/img/wordmark-480.png" width="480" height="151" alt="">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list" role="list">
+          <li><a href="{{root}}"{{cur:home}}>Home</a></li>
+          <li><a href="{{root}}transfers/"{{cur:transfers}}>Transfers</a></li>
+          <li><a href="{{root}}tours/"{{cur:tours}}>Tours</a></li>
+          <li><a href="{{root}}rentals/"{{cur:rentals}}>Rentals</a></li>
+          <li><a href="{{root}}about/"{{cur:about}}>About</a></li>
+          <li><a href="{{root}}contact/"{{cur:contact}}>Contact</a></li>
+        </ul>
+        <div class="site-nav__contact">
+          <a href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg> WhatsApp {{site.phoneDisplay}}</a>
+          <a href="mailto:{{site.email}}"><svg class="icon"><use href="#i-mail"/></svg> Email the team</a>
+        </div>
+      </nav>
+      <a class="btn btn--sun site-header__cta" href="{{root}}contact/#request">Check Availability</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <svg class="icon icon--open"><use href="#i-menu"/></svg><svg class="icon icon--close"><use href="#i-close"/></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </header>

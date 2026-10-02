@@ -1,0 +1,41 @@
+    <section class="section options" id="transfer-options" aria-labelledby="options-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Transfer options</p>
+          <h2 id="options-title">Choose the Transfer That Fits Your Trip</h2>
+        </div>
+        <div class="options__wrap" data-tabs>
+          <div class="options__tabs" data-tablist hidden>
+            <button type="button" data-tab="opt-shared">Shared</button>
+            <button type="button" data-tab="opt-private">Private</button>
+            <button type="button" data-tab="opt-airport">Airport &amp; Hotel</button>
+          </div>
+          <div class="options__grid">
+            <article class="option" id="opt-shared" data-panel>
+              <div class="option__media">{{img:fleet-field|(min-width: 60rem) 32vw, 100vw}}</div>
+              <p class="option__tag">Scheduled routes</p>
+              <h3>Shared Van Transfers</h3>
+              <p>A practical option for solo travelers, couples, and small groups traveling along popular Palawan routes. Check the available schedule for your destination and send your travel details so the team can confirm your reservation.</p>
+              <dl class="option__fit"><dt>Suited for</dt><dd>Solo travelers, couples &amp; small groups</dd></dl>
+              <a class="text-link" href="{{root}}transfers/#shared">View Shared Routes <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="option" id="opt-private" data-panel>
+              <div class="option__media">{{img:vans-palm-grove|(min-width: 60rem) 32vw, 100vw}}</div>
+              <p class="option__tag">Your own vehicle</p>
+              <h3>Private Van Transfers</h3>
+              <p>Travel with your own group and arrange a transfer around your itinerary. Private transfers are suited for families, groups, travelers with extra luggage, or anyone who prefers a more direct trip.</p>
+              <dl class="option__fit"><dt>Suited for</dt><dd>Families, groups &amp; extra luggage</dd></dl>
+              <a class="text-link" href="{{root}}contact/?type=private#request">Ask About a Private Transfer <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="option" id="opt-airport" data-panel>
+              <div class="option__media">{{img:vans-hotel-entrance|(min-width: 60rem) 32vw, 100vw}}</div>
+              <p class="option__tag">Arrivals &amp; departures</p>
+              <h3>Airport &amp; Hotel Pickup</h3>
+              <p>Arriving at Puerto Princesa International Airport or moving between your hotel, resort, and the airport? Send your arrival or pickup details and the team can help arrange the appropriate transfer.</p>
+              <dl class="option__fit"><dt>Suited for</dt><dd>Flight arrivals, hotel &amp; resort moves</dd></dl>
+              <a class="text-link" href="{{root}}contact/?service=airport#request">Arrange a Pickup <svg class="icon"><use href="#i-arrow"/></svg></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>

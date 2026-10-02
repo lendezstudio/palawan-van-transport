@@ -1,0 +1,73 @@
+<!--
+title: Car & Motorcycle Rentals in Palawan | Palawan Van Transport
+description: Ask about available car and motorcycle rental options for your Palawan trip.
+nav: rentals
+-->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__grid">
+        <div class="page-hero__text">
+          <nav class="crumbs" aria-label="Breadcrumb"><ol role="list"><li><a href="{{root}}">Home</a></li><li><span aria-current="page">Rentals</span></li></ol></nav>
+          <h1 id="page-title">Explore Palawan at Your Own Pace</h1>
+          <p class="lead">Ask about available car and motorcycle rental options for travelers who prefer to manage part of their Palawan itinerary independently.</p>
+          <div class="btn-row">
+            <a class="btn btn--sun btn--lg" href="{{root}}contact/?service=rental#request">Check Rental Availability</a>
+          </div>
+        </div>
+        <figure class="page-hero__media">{{img:guests-karst-field|(min-width: 60rem) 48vw, 100vw||eager}}</figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="types-title">
+      <div class="container">
+        <h2 id="types-title" class="visually-hidden">Rental options</h2>
+        <div class="rental-types">
+          <div class="rental-type" data-reveal>
+            <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-key"/></svg></span>
+            <h3>Car Rental</h3>
+            <p>Ask which cars are available for your dates and how pickup and return can be arranged.</p>
+            <a class="text-link" href="{{root}}contact/?service=rental&amp;vehicle=car#request">Ask About Car Rental <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="rental-type" data-reveal>
+            <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-compass"/></svg></span>
+            <h3>Motorcycle Rental</h3>
+            <p>Ask which motorcycles are available for your dates and what you need to bring to rent one.</p>
+            <a class="text-link" href="{{root}}contact/?service=rental&amp;vehicle=motorcycle#request">Ask About Motorcycle Rental <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split split--tint" aria-labelledby="confirm-title">
+      <div class="container split__grid">
+        <div class="split__text">
+          <p class="eyebrow">Before you reserve</p>
+          <h2 id="confirm-title">What to Confirm Before Renting</h2>
+          <p>Before reserving a vehicle, confirm the available unit, rental period, pickup and return arrangements, requirements, rates, deposit, fuel policy, and any usage restrictions directly with the team.</p>
+          <a class="btn btn--green" href="{{root}}contact/?service=rental#request">Ask About Rentals</a>
+        </div>
+        <ul class="checklist checklist--ticket" role="list">
+          <li><svg class="icon"><use href="#i-check"/></svg>Available unit</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Rental period</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Pickup and return arrangements</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Requirements</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Rates</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Deposit</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Fuel policy</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Usage restrictions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section split" aria-labelledby="driver-title">
+      <div class="container split__grid">
+        <figure class="split__media" data-reveal>{{img:vans-forest-road|(min-width: 60rem) 45vw, 100vw}}</figure>
+        <div class="split__text">
+          <p class="eyebrow">Prefer not to drive?</p>
+          <h2 id="driver-title">Book a Private Van Instead</h2>
+          <p>Private transfers give your group a dedicated vehicle for the journey. They can be a convenient choice for families, larger groups, travelers with more luggage, or itineraries that need a more direct pickup and drop-off arrangement.</p>
+          <a class="text-link" href="{{root}}transfers/#private">About private transfers <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+{{> final-cta}}

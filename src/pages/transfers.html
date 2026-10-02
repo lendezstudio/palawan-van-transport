@@ -1,0 +1,101 @@
+<!--
+title: Palawan Van Transfers | Shared, Private & Airport Transfers
+description: Explore van transfer options for Puerto Princesa, El Nido, Port Barton, San Vicente, Sabang, airport pickups, and other Palawan routes.
+nav: transfers
+-->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__grid">
+        <div class="page-hero__text">
+          <nav class="crumbs" aria-label="Breadcrumb"><ol role="list"><li><a href="{{root}}">Home</a></li><li><span aria-current="page">Transfers</span></li></ol></nav>
+          <h1 id="page-title">Find Your Palawan Transfer</h1>
+          <p class="lead">Browse transfer options for popular routes from Puerto Princesa and other Palawan destinations. Choose your route, then send your travel details to confirm the latest schedule and availability.</p>
+          <div class="btn-row">
+            <a class="btn btn--sun btn--lg" href="{{root}}contact/#request">Check Availability</a>
+            <a class="btn btn--outline btn--lg" href="#routes">Popular Routes</a>
+          </div>
+        </div>
+        <figure class="page-hero__media">{{img:fleet-parking-lot|(min-width: 60rem) 48vw, 100vw||eager}}</figure>
+      </div>
+      <nav class="jump" aria-label="On this page">
+        <div class="container">
+          <ul role="list">
+            <li><a href="#shared">Shared</a></li>
+            <li><a href="#private">Private</a></li>
+            <li><a href="#airport">Airport</a></li>
+            <li><a href="#resort">Resort</a></li>
+            <li><a href="#routes">Routes</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section split" id="shared" aria-labelledby="shared-title">
+      <div class="container split__grid">
+        <figure class="split__media" data-reveal>{{img:fleet-field|(min-width: 60rem) 45vw, 100vw}}</figure>
+        <div class="split__text">
+          <p class="eyebrow">Shared Transfers</p>
+          <h2 id="shared-title">Travel a Popular Route With Other Passengers</h2>
+          <p>Shared transfers are designed for travelers heading in the same direction on scheduled routes. Availability, pickup arrangements, departure times, and fares may vary, so confirm the latest details before booking.</p>
+          <h3 class="mini-heading">What to confirm for your route</h3>
+          <ul class="checklist checklist--cols" role="list">
+            <li><svg class="icon"><use href="#i-check"/></svg>Pickup location</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Drop-off area</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Current departure times</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Approximate travel duration</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Current fare</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Luggage guidance</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Booking cutoff, if applicable</li>
+          </ul>
+          <a class="btn btn--green" href="#routes">View Shared Routes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split split--reverse split--tint" id="private" aria-labelledby="private-title">
+      <div class="container split__grid">
+        <figure class="split__media" data-reveal>{{img:vans-palm-grove|(min-width: 60rem) 45vw, 100vw}}</figure>
+        <div class="split__text">
+          <p class="eyebrow">Private Transfers</p>
+          <h2 id="private-title">Your Group. Your Transfer.</h2>
+          <p>Private transfers give your group a dedicated vehicle for the journey. They can be a convenient choice for families, larger groups, travelers with more luggage, or itineraries that need a more direct pickup and drop-off arrangement.</p>
+          <a class="btn btn--green" href="{{root}}contact/?type=private#request">Request a Private Transfer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="airport" aria-labelledby="airport-title">
+      <div class="container split__grid">
+        <figure class="split__media" data-reveal>{{img:vans-hotel-entrance|(min-width: 60rem) 45vw, 100vw}}</figure>
+        <div class="split__text">
+          <p class="eyebrow"><svg class="icon"><use href="#i-plane"/></svg> Airport Transfers</p>
+          <h2 id="airport-title">Start or End Your Trip With a Clear Pickup Plan</h2>
+          <p>Share your flight details, arrival time, destination, and number of passengers so the team can arrange the appropriate transfer from or to Puerto Princesa International Airport.</p>
+          <a class="btn btn--green" href="{{root}}contact/?service=airport#request">Arrange Airport Pickup</a>
+          <div class="sub-block" id="resort">
+            <h3><svg class="icon"><use href="#i-resort"/></svg> Resort Transfers</h3>
+            <p>Need transportation to or from a resort? Share the property name, travel date, and number of passengers so the team can check the appropriate option.</p>
+            <a class="text-link" href="{{root}}contact/?service=resort#request">Plan a Resort Transfer <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section routes" id="routes" aria-labelledby="routes-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow eyebrow--light">Popular routes</p>
+            <h2 id="routes-title">Where Are You Heading Next?</h2>
+          </div>
+          <p>Explore some of the routes travelers frequently look for when moving around Palawan. Open a route for its details, then send your travel date to confirm.</p>
+        </div>
+        {{routes:board}}
+        <p class="routes__note">Schedules, fares, pickup points, and route availability should be confirmed before travel. Heading somewhere else in Palawan? <a href="{{root}}contact/#request">Tell us your route.</a></p>
+      </div>
+    </section>
+
+{{> know-details}}
+
+{{> steps}}
+
+{{> final-cta}}

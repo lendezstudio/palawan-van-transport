@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "puerto-princesa-to-el-nido",
+    "origin": "Puerto Princesa",
+    "destination": "El Nido",
+    "summary": "From the city or airport to one of Palawan's most popular destinations. Shared and private transfer options may be available depending on your travel date.",
+    "image": "vans-forest-road",
+    "details": { "pickup": "", "dropoff": "", "travelTime": "", "sharedFare": "", "privateFare": "", "departures": "", "luggage": "" }
+  },
+  {
+    "slug": "el-nido-to-puerto-princesa",
+    "origin": "El Nido",
+    "destination": "Puerto Princesa",
+    "summary": "Plan your return to Puerto Princesa, airport transfer, or onward connection with a shared or private van option.",
+    "image": "fleet-field",
+    "details": { "pickup": "", "dropoff": "", "travelTime": "", "sharedFare": "", "privateFare": "", "departures": "", "luggage": "" }
+  },
+  {
+    "slug": "puerto-princesa-to-port-barton",
+    "origin": "Puerto Princesa",
+    "destination": "Port Barton",
+    "summary": "Travel from Puerto Princesa toward Port Barton with transfer options based on the current route schedule and availability.",
+    "image": "vans-palm-grove",
+    "details": { "pickup": "", "dropoff": "", "travelTime": "", "sharedFare": "", "privateFare": "", "departures": "", "luggage": "" }
+  },
+  {
+    "slug": "puerto-princesa-to-san-vicente",
+    "origin": "Puerto Princesa",
+    "destination": "San Vicente",
+    "summary": "Ask about current transfer options for San Vicente and nearby pickup or drop-off points.",
+    "image": "fleet-parking-lot",
+    "details": { "pickup": "", "dropoff": "", "travelTime": "", "sharedFare": "", "privateFare": "", "departures": "", "luggage": "" }
+  },
+  {
+    "slug": "puerto-princesa-to-sabang",
+    "origin": "Puerto Princesa",
+    "destination": "Sabang",
+    "summary": "Arrange transport toward Sabang for your accommodation, tour connection, or onward travel.",
+    "image": "vans-hotel-entrance",
+    "details": { "pickup": "", "dropoff": "", "travelTime": "", "sharedFare": "", "privateFare": "", "departures": "", "luggage": "" }
+  }
+]

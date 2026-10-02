@@ -1,0 +1,239 @@
+﻿{
+    "guests-karst-shore":  {
+                               "w":  2048,
+                               "sizes":  [
+                                             640,
+                                             1200
+                                         ],
+                               "h":  2048
+                           },
+    "guests-karst-field":  {
+                               "w":  1536,
+                               "sizes":  [
+                                             640,
+                                             1200
+                                         ],
+                               "h":  2048
+                           },
+    "snorkeling":  {
+                       "w":  1500,
+                       "sizes":  [
+                                     640,
+                                     1200
+                                 ],
+                       "h":  2000
+                   },
+    "market-stop":  {
+                        "w":  2048,
+                        "sizes":  [
+                                      640,
+                                      1200
+                                  ],
+                        "h":  1536
+                    },
+    "fleet-parking-lot":  {
+                              "w":  2048,
+                              "sizes":  [
+                                            640,
+                                            1200
+                                        ],
+                              "h":  1536
+                          },
+    "guests-limestone-cliffs":  {
+                                    "w":  2048,
+                                    "sizes":  [
+                                                  640,
+                                                  1200
+                                              ],
+                                    "h":  2048
+                                },
+    "paddle-boat-orange":  {
+                               "w":  2048,
+                               "sizes":  [
+                                             640,
+                                             1200
+                                         ],
+                               "h":  2048
+                           },
+    "group-cave-entrance":  {
+                                "w":  2048,
+                                "sizes":  [
+                                              640,
+                                              1200
+                                          ],
+                                "h":  2048
+                            },
+    "guests-limestone-wall":  {
+                                  "w":  1530,
+                                  "sizes":  [
+                                                640,
+                                                1200
+                                            ],
+                                  "h":  2040
+                              },
+    "boat-group":  {
+                       "w":  2000,
+                       "sizes":  [
+                                     640,
+                                     1200
+                                 ],
+                       "h":  1500
+                   },
+    "beach-breakfast":  {
+                            "w":  1722,
+                            "sizes":  [
+                                          640,
+                                          1200
+                                      ],
+                            "h":  2048
+                        },
+    "paddle-boat-blue":  {
+                             "w":  2048,
+                             "sizes":  [
+                                           640,
+                                           1200
+                                       ],
+                             "h":  2048
+                         },
+    "group-jetty":  {
+                        "w":  1536,
+                        "sizes":  [
+                                      640,
+                                      1200
+                                  ],
+                        "h":  2048
+                    },
+    "group-river-beach":  {
+                              "w":  2048,
+                              "sizes":  [
+                                            640,
+                                            1200
+                                        ],
+                              "h":  2048
+                          },
+    "vans-forest-road":  {
+                             "w":  1536,
+                             "sizes":  [
+                                           640,
+                                           1200
+                                       ],
+                             "h":  2048
+                         },
+    "vans-hotel-entrance":  {
+                                "w":  2048,
+                                "sizes":  [
+                                              640,
+                                              1200
+                                          ],
+                                "h":  1536
+                            },
+    "beach-shade":  {
+                        "w":  1536,
+                        "sizes":  [
+                                      640,
+                                      1200
+                                  ],
+                        "h":  2048
+                    },
+    "island-turquoise":  {
+                             "w":  720,
+                             "sizes":  [
+                                           640
+                                       ],
+                             "h":  960
+                         },
+    "ugong-rock-entrance":  {
+                                "w":  2048,
+                                "sizes":  [
+                                              640,
+                                              1200
+                                          ],
+                                "h":  1536
+                            },
+    "cottage-lunch":  {
+                          "w":  2000,
+                          "sizes":  [
+                                        640,
+                                        1200
+                                    ],
+                          "h":  1500
+                      },
+    "guests-cliff-beach":  {
+                               "w":  720,
+                               "sizes":  [
+                                             640
+                                         ],
+                               "h":  960
+                           },
+    "underground-river-sign":  {
+                                   "w":  720,
+                                   "sizes":  [
+                                                 640
+                                             ],
+                                   "h":  960
+                               },
+    "fleet-blue-sky":  {
+                           "w":  2048,
+                           "sizes":  [
+                                         640,
+                                         1200,
+                                         2000
+                                     ],
+                           "h":  1536
+                       },
+    "island-boat":  {
+                        "w":  2048,
+                        "sizes":  [
+                                      640,
+                                      1200
+                                  ],
+                        "h":  1536
+                    },
+    "vans-palm-grove":  {
+                            "w":  2048,
+                            "sizes":  [
+                                          640,
+                                          1200
+                                      ],
+                            "h":  1536
+                        },
+    "paddle-boat-river":  {
+                              "w":  960,
+                              "sizes":  [
+                                            640
+                                        ],
+                              "h":  960
+                          },
+    "fleet-field":  {
+                        "w":  2048,
+                        "sizes":  [
+                                      640,
+                                      1200
+                                  ],
+                        "h":  1536
+                    },
+    "paddle-boat-turquoise":  {
+                                  "w":  2040,
+                                  "sizes":  [
+                                                640,
+                                                1200
+                                            ],
+                                  "h":  1530
+                              },
+    "group-pier":  {
+                       "w":  2048,
+                       "sizes":  [
+                                     640,
+                                     1200
+                                 ],
+                       "h":  2048
+                   },
+    "luli-island-welcome":  {
+                                "w":  2000,
+                                "sizes":  [
+                                              640,
+                                              1200
+                                          ],
+                                "h":  1500
+                            }
+}

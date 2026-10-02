@@ -1,0 +1,165 @@
+<!--
+title: Check Transfer Availability | Palawan Van Transport
+description: Send your route, travel date, pickup location, destination, and passenger details to check transfer availability in Palawan.
+nav: contact
+bodyClass: page-contact
+-->
+    <section class="contact-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="crumbs crumbs--light" aria-label="Breadcrumb"><ol role="list"><li><a href="{{root}}">Home</a></li><li><span aria-current="page">Contact &amp; Book</span></li></ol></nav>
+        <h1 id="page-title">Tell Us Where You're Going</h1>
+        <p class="lead">Send your travel details and the team can check the appropriate transfer or travel option for your trip.</p>
+      </div>
+    </section>
+
+    <section class="section contact" aria-label="Reservation request and direct contact">
+      <div class="container contact__grid">
+        <div class="request" id="request">
+          <h2>Check Availability</h2>
+          <p class="request__intro">Complete the details below. This is a reservation request and does not confirm a booking until the team verifies availability and travel details.</p>
+
+          <form class="form" id="travel-form" novalidate data-endpoint="{{site.formEndpoint}}" data-whatsapp="{{site.whatsapp}}" data-email="{{site.email}}">
+            <p class="form__required-note"><span aria-hidden="true">*</span> Required</p>
+
+            <fieldset class="form__group">
+              <legend>Your details</legend>
+              <div class="field">
+                <label for="f-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-phone">Mobile / WhatsApp Number <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-phone-hint">
+                  <p class="hint" id="f-phone-hint">Include your country code, e.g. +63</p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email Address</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form__group">
+              <legend>Your trip</legend>
+              <div class="field">
+                <label for="f-service">What do you need?</label>
+                <select id="f-service" name="service">
+                  <option value="Van transfer">Van transfer</option>
+                  <option value="Airport or hotel pickup">Airport or hotel pickup</option>
+                  <option value="Resort transfer">Resort transfer</option>
+                  <option value="Palawan tour">Palawan tour</option>
+                  <option value="Car or motorcycle rental">Car or motorcycle rental</option>
+                  <option value="Travel assistance">Travel assistance</option>
+                </select>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-date">Travel Date <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-date" name="date" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="f-pax">Number of Passengers <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-pax" name="passengers" type="number" min="1" max="99" inputmode="numeric" required>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-from">Pickup Location <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-from" name="pickup" type="text" required aria-describedby="f-from-hint">
+                  <p class="hint" id="f-from-hint">Airport, hotel name, or town</p>
+                </div>
+                <div class="field">
+                  <label for="f-to">Destination <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-to" name="destination" type="text" required list="destinations">
+                  <datalist id="destinations">
+                    <option value="Puerto Princesa"></option>
+                    <option value="El Nido"></option>
+                    <option value="Port Barton"></option>
+                    <option value="San Vicente"></option>
+                    <option value="Sabang"></option>
+                  </datalist>
+                </div>
+              </div>
+              <fieldset class="field choice">
+                <legend>Transfer Type</legend>
+                <div class="choice__options">
+                  <label><input type="radio" name="type" value="Shared"> <span>Shared</span></label>
+                  <label><input type="radio" name="type" value="Private"> <span>Private</span></label>
+                  <label><input type="radio" name="type" value="Not sure" checked> <span>Not Sure</span></label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="f-flight">Flight Number and Arrival Time, if applicable</label>
+                <input id="f-flight" name="flight" type="text" placeholder="e.g. flight number, 10:30 AM arrival">
+              </div>
+              <div class="field">
+                <label for="f-luggage">Luggage Notes</label>
+                <input id="f-luggage" name="luggage" type="text" placeholder="e.g. 2 large suitcases, 1 surfboard">
+              </div>
+              <div class="field">
+                <label for="f-message">Additional Message</label>
+                <textarea id="f-message" name="message" rows="4"></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form__error" role="alert" data-form-error hidden>Please check the highlighted fields.</div>
+            <button class="btn btn--sun btn--lg btn--block" type="submit">Send Travel Request</button>
+            <p class="form__fineprint">Your request opens in WhatsApp or email so you can send it straight to the team.</p>
+          </form>
+
+          <div class="form-result" data-form-result hidden tabindex="-1">
+            <h3>Your travel request is ready to send</h3>
+            <p>Choose how you'd like to send it. Your details are already filled in, so you only need to press send.</p>
+            <div class="btn-row">
+              <a class="btn btn--green" data-send="whatsapp" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg>Send via WhatsApp</a>
+              <a class="btn btn--outline" data-send="email" href="#"><svg class="icon"><use href="#i-mail"/></svg>Send via Email</a>
+            </div>
+            <p class="form-result__after">Once sent, the team will review the details and confirm availability, schedule, fare, pickup instructions, and next steps. This is not yet a confirmed booking.</p>
+            <button type="button" class="text-link" data-form-edit>Edit my details</button>
+          </div>
+
+          <div class="form-result" data-form-success hidden tabindex="-1">
+            <h3>Thank you</h3>
+            <p>Your travel request has been received. The team will review the details and confirm availability, schedule, fare, pickup instructions, and next steps.</p>
+          </div>
+        </div>
+
+        <aside class="direct" aria-labelledby="direct-title">
+          <h2 id="direct-title" class="h3">Prefer to Message Directly?</h2>
+          <ul class="direct__list" role="list">
+            <li>
+              <a class="direct__item" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener">
+                <span class="direct__icon" aria-hidden="true"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+                <span><span class="direct__label">WhatsApp</span><span class="direct__value">{{site.phoneDisplay}}</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="direct__item" href="tel:{{site.phoneHref}}">
+                <span class="direct__icon" aria-hidden="true"><svg class="icon"><use href="#i-phone"/></svg></span>
+                <span><span class="direct__label">Call</span><span class="direct__value">{{site.phoneDisplay}}</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="direct__item" href="mailto:{{site.email}}">
+                <span class="direct__icon" aria-hidden="true"><svg class="icon"><use href="#i-mail"/></svg></span>
+                <span><span class="direct__label">Email</span><span class="direct__value">palawanvantransportandservices<wbr>@gmail.com</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="direct__item" href="{{site.facebook}}" target="_blank" rel="noopener">
+                <span class="direct__icon" aria-hidden="true"><svg class="icon"><use href="#i-facebook"/></svg></span>
+                <span><span class="direct__label">Facebook</span><span class="direct__value">Palawan Van Transport &amp; Travel Services</span></span>
+              </a>
+            </li>
+          </ul>
+          <div class="direct__note">
+            <svg class="icon"><use href="#i-pin"/></svg>
+            <p>Based in Puerto Princesa, Palawan, Philippines.</p>
+          </div>
+          <figure class="direct__media">{{img:vans-hotel-entrance|(min-width: 60rem) 30vw, 100vw}}</figure>
+        </aside>
+      </div>
+    </section>
+
+{{> faq}}

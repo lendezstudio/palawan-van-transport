@@ -1,0 +1,152 @@
+<!--
+title: Palawan Van Transport & Travel Services | Transfers, Tours & Rentals
+description: Plan shared or private van transfers, airport pickups, tours, rentals, and travel services across Palawan. Check routes and send your travel details to confirm availability.
+nav: home
+ogTitle: Palawan Van Transport & Travel Services
+ogDescription: Shared and private van transfers, airport pickups, tours, rentals, and travel services across Palawan.
+bodyClass: page-home
+-->
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(max-width: 47.99rem)" srcset="{{srcset:vans-forest-road}}" sizes="100vw">
+        <img src="{{src:fleet-blue-sky}}" srcset="{{srcset:fleet-blue-sky}}" sizes="100vw" width="2000" height="1500" alt="Passenger vans lined up and ready for the road in Palawan" fetchpriority="high" decoding="async">
+      </picture>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Van transfers &middot; Tours &middot; Rentals</p>
+        <h1 id="hero-title">Travel Palawan With Less Guesswork</h1>
+        <p class="hero__lead">Shared and private van transfers, airport pickups, tours, and travel services across Palawan. Check your route, tell us your travel details, and let our team help you plan the next part of your trip.</p>
+        <div class="btn-row">
+          <a class="btn btn--sun btn--lg" href="{{root}}contact/#request">Check Availability</a>
+          <a class="btn btn--ghost-light btn--lg" href="#routes">Explore Routes</a>
+        </div>
+      </div>
+    </section>
+
+{{> stops}}
+
+    <section class="section intro" aria-labelledby="intro-title">
+      <div class="container intro__grid">
+        <figure class="intro__media" data-reveal>
+          {{img:group-pier|(min-width: 60rem) 40vw, 100vw}}
+        </figure>
+        <div class="intro__text">
+          <p class="eyebrow">One local contact</p>
+          <h2 id="intro-title">Your Palawan Journey Should Feel Simple From the Start</h2>
+          <p>Whether you have just landed in Puerto Princesa, are heading north to El Nido, or are planning the next stop of your Palawan trip, transport is one of the first things you need to organize.</p>
+          <p>Palawan Van Transport &amp; Travel Services brings transfers, tours, rentals, and travel assistance into one place so you can spend less time figuring out logistics and more time enjoying the island.</p>
+          <a class="text-link" href="#services">See Our Services <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+{{> transfer-options}}
+
+    <section class="section routes" id="routes" aria-labelledby="routes-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow eyebrow--light">Popular routes</p>
+            <h2 id="routes-title">Where Are You Heading Next?</h2>
+          </div>
+          <p>Explore some of the routes travelers frequently look for when moving around Palawan.</p>
+        </div>
+        {{routes:board}}
+        <p class="routes__note">Schedules, fares, pickup points, and route availability should be confirmed before travel.</p>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container services__grid">
+        <figure class="services__media" data-reveal>
+          {{img:paddle-boat-turquoise|(min-width: 60rem) 42vw, 100vw}}
+        </figure>
+        <div>
+          <p class="eyebrow">Beyond transfers</p>
+          <h2 id="services-title">More Than a Van Transfer</h2>
+          <p class="lead">If your trip needs more than point-to-point transportation, the team also offers additional travel services that can help you organize your stay in Palawan.</p>
+          <ul class="service-list" role="list">
+            <li class="service" data-reveal>
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-compass"/></svg></span>
+              <div>
+                <h3>Palawan Tours</h3>
+                <p>Explore available tour options and ask the team which activities may fit your destination and schedule.</p>
+                <a class="text-link" href="{{root}}tours/">Explore Tours <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-key"/></svg></span>
+              <div>
+                <h3>Car &amp; Motorcycle Rental</h3>
+                <p>Ask about available rental options if you prefer to explore independently during your stay.</p>
+                <a class="text-link" href="{{root}}rentals/">Ask About Rentals <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-resort"/></svg></span>
+              <div>
+                <h3>Resort Transfers</h3>
+                <p>Need transportation to or from a resort? Share the property name, travel date, and number of passengers so the team can check the appropriate option.</p>
+                <a class="text-link" href="{{root}}contact/?service=resort#request">Plan a Resort Transfer <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+            </li>
+            <li class="service" data-reveal>
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-ticket"/></svg></span>
+              <div>
+                <h3>Travel Assistance</h3>
+                <p>Flight-ticket assistance is also listed among the services offered. Availability and the current process should be confirmed directly with the team.</p>
+                <a class="text-link" href="{{root}}contact/?service=assistance#request">Send an Inquiry <svg class="icon"><use href="#i-arrow"/></svg></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+{{> steps}}
+
+    <section class="section gallery-teaser" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Travel gallery</p>
+            <h2 id="gallery-title">On the Road Around Palawan</h2>
+          </div>
+          <p>From airport pickups and van transfers to group trips and island destinations, see more of the journeys and travel experiences shared by Palawan Van Transport &amp; Travel Services.</p>
+        </div>
+        <div class="mosaic">
+          <figure class="mosaic__a" data-reveal>{{img:vans-hotel-entrance|(min-width: 60rem) 50vw, 100vw}}</figure>
+          <figure class="mosaic__b" data-reveal>{{img:guests-limestone-cliffs|(min-width: 60rem) 25vw, 50vw}}</figure>
+          <figure class="mosaic__c" data-reveal>{{img:island-turquoise|(min-width: 60rem) 25vw, 50vw}}</figure>
+          <figure class="mosaic__d" data-reveal>{{img:boat-group|(min-width: 60rem) 25vw, 50vw}}</figure>
+          <figure class="mosaic__e" data-reveal>{{img:vans-forest-road|(min-width: 60rem) 25vw, 50vw}}</figure>
+        </div>
+        <div class="center-cta">
+          <a class="btn btn--outline" href="{{root}}gallery/">View Travel Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feedback" aria-labelledby="feedback-title">
+      <div class="container feedback__grid">
+        <div class="feedback__text">
+          <p class="eyebrow">Guest feedback</p>
+          <h2 id="feedback-title">What Travelers Have Shared</h2>
+          <p>Read feedback from previous guests and travelers who have used the business for transportation and travel services.</p>
+          <!--
+            Verified testimonials go here once the business supplies them with permission to publish.
+            Use: <blockquote class="quote"><p>…</p><footer>Guest name, route</footer></blockquote>
+          -->
+          <a class="btn btn--outline" href="{{site.facebook}}" target="_blank" rel="noopener"><svg class="icon"><use href="#i-facebook"/></svg>See Guest Feedback on Facebook</a>
+        </div>
+        <ul class="filmstrip" role="list">
+          <li data-reveal>{{img:guests-karst-shore|(min-width: 60rem) 18vw, 45vw}}</li>
+          <li data-reveal>{{img:luli-island-welcome|(min-width: 60rem) 18vw, 45vw}}</li>
+          <li data-reveal>{{img:group-cave-entrance|(min-width: 60rem) 18vw, 45vw}}</li>
+          <li data-reveal>{{img:beach-breakfast|(min-width: 60rem) 18vw, 45vw}}</li>
+        </ul>
+      </div>
+    </section>
+
+{{> faq}}
+
+{{> final-cta}}

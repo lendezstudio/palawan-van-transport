@@ -1,0 +1,68 @@
+<!--
+title: {{route.origin}} to {{route.destination}} Van Transfer | Palawan Van Transport
+description: Shared or private van transfer from {{route.origin}} to {{route.destination}}. Send your travel date, pickup location, and passenger count to confirm the current schedule and availability.
+nav: transfers
+bodyClass: page-route
+-->
+    <section class="route-hero" aria-labelledby="page-title">
+      <div class="route-hero__media">{{img:{{route.image}}|100vw||eager}}</div>
+      <div class="container route-hero__inner">
+        <nav class="crumbs crumbs--light" aria-label="Breadcrumb"><ol role="list"><li><a href="{{root}}">Home</a></li><li><a href="{{root}}transfers/">Transfers</a></li><li><span aria-current="page">{{route.origin}} to {{route.destination}}</span></li></ol></nav>
+        <p class="eyebrow eyebrow--light">Van transfer</p>
+        <h1 id="page-title">{{route.origin}} to {{route.destination}} Transfer</h1>
+        <div class="route-hero__line" aria-hidden="true">
+          <span class="route-hero__end">{{route.origin}}</span>
+          <span class="route-hero__road"><span class="road-dash"></span><svg class="icon route-hero__van"><use href="#i-van"/></svg></span>
+          <span class="route-hero__end">{{route.destination}}</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section route-body" aria-labelledby="route-overview">
+      <div class="container route-body__grid">
+        <div class="route-body__main">
+          <h2 id="route-overview" class="visually-hidden">Route overview</h2>
+          <p class="lead">Travel from {{route.origin}} to {{route.destination}} with shared or private transfer options, subject to the current schedule and availability.</p>
+          <p>{{route.summary}}</p>
+
+          <h2 class="h3">Route at a glance</h2>
+          <dl class="facts">
+            <div class="fact"><dt>From</dt><dd>{{route.origin}}</dd></div>
+            <div class="fact"><dt>To</dt><dd>{{route.destination}}</dd></div>
+            <div class="fact"><dt>Transfer type</dt><dd>Shared or private, subject to availability</dd></div>
+            {{route.facts}}
+          </dl>
+
+          <div class="confirm-box"{{route.confirmClass}}>
+            <h2 class="h3">Confirmed when you inquire</h2>
+            <p>These details can change by date and season, so the team shares the current information with you directly.</p>
+            <ul class="checklist checklist--cols" role="list">
+              {{route.confirm}}
+            </ul>
+          </div>
+
+          <h2 class="h3">Before You Travel</h2>
+          <p>Please confirm your final pickup point, departure time, fare, luggage details, and payment instructions directly with the team before your travel date.</p>
+        </div>
+
+        <aside class="book-card" aria-labelledby="book-card-title">
+          <h2 id="book-card-title" class="h3">Check This Route</h2>
+          <p>Send your travel date, pickup location, and number of passengers. The team will reply with the available option.</p>
+          <a class="btn btn--sun btn--block" href="{{root}}contact/?from={{route.originQ}}&amp;to={{route.destinationQ}}#request">Check This Route</a>
+          <a class="btn btn--outline btn--block" href="https://wa.me/{{site.whatsapp}}?text=Hi%21%20I%27d%20like%20to%20check%20availability%20for%20{{route.originQ}}%20to%20{{route.destinationQ}}." target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg>Ask on WhatsApp</a>
+          <p class="book-card__note">A request is not a confirmed booking until the team verifies availability and travel details.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section other-routes" aria-labelledby="other-title">
+      <div class="container">
+        <h2 id="other-title" class="h3">Other popular routes</h2>
+        <ul class="route-chips" role="list">
+{{route.others}}
+        </ul>
+        <p><a class="text-link" href="{{root}}transfers/">All transfer options <svg class="icon"><use href="#i-arrow"/></svg></a></p>
+      </div>
+    </section>
+
+{{> final-cta}}

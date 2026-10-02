@@ -1,0 +1,10 @@
+# Internal prospect / sales documents — keep out of the repository
+*.pdf
+
+# OS / editor files
+Thumbs.db
+.DS_Store
+.vscode/
+
+# Original client photos and logo source files — kept local only (processed web versions live in site/assets/img)
+Images/

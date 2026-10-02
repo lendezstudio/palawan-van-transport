@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta name="theme-color" content="#0c4623">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Palawan Van Transport &amp; Travel Services">
+  <meta property="og:title" content="{{ogTitle}}">
+  <meta property="og:description" content="{{ogDescription}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{site.siteUrl}}assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Palawan Van Transport &amp; Travel Services logo beside a row of passenger vans">
+  <meta property="og:locale" content="en_PH">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ogTitle}}">
+  <meta name="twitter:description" content="{{ogDescription}}">
+  <meta name="twitter:image" content="{{site.siteUrl}}assets/img/og-image.jpg">
+
+  <link rel="icon" href="{{root}}favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{root}}favicon-32.png">
+  <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+  <link rel="manifest" href="{{root}}site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;family=Figtree:ital,wght@0,400..700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="{{root}}assets/css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="{{root}}assets/js/main.js" defer></script>
+{{schema}}
+</head>
+<body class="{{bodyClass}}">
+{{> icons}}
+  <a class="skip-link" href="#main">Skip to content</a>
+{{> header}}
+  <main id="main">
+{{content}}
+  </main>
+{{> footer}}
+{{> mobile-bar}}
+</body>
+</html>
